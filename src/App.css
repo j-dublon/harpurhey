@@ -39,3 +39,51 @@ body {
 .nav__links__item:hover {
   color: #ed7d2d;
 }
+
+.hero {
+  background-color: #9ad7e7;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__image {
+  align-self: center;
+}
+
+.home,
+.about {
+  margin: 2em;
+}
+
+.home__title,
+.about__title {
+  font-weight: 500;
+  font-size: 2.5em;
+  text-align: center;
+  color: #193b4f;
+  margin-bottom: 1.5em;
+}
+
+.about__content {
+  margin: 2em;
+  background-color: #9ad7e7;
+  padding: 1em;
+  border-radius: 6px;
+}
+
+.about__content__top {
+  display: flex;
+  flex-direction: row;
+}
+
+.about__content__top__image {
+  max-height: 300px;
+  border-radius: 6px;
+}
+
+.about__content__top__text {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  margin-left: 1em;
+}
