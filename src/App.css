@@ -8,3 +8,34 @@
   display: flex;
   flex-direction: column;
 }
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  height: 4em;
+  margin: 1em;
+}
+
+.nav__links {
+  align-self: center;
+  margin-right: 1em;
+}
+
+.nav__links__item {
+  margin-right: 2em;
+  text-decoration: none;
+  font-size: 1.4em;
+  color: #193b4f;
+}
+
+.nav__links__item:hover {
+  color: #ed7d2d;
+}
