@@ -53,13 +53,15 @@ body {
 
 .home,
 .about,
-.activities {
+.activities,
+.contact {
   margin: 2em;
 }
 
 .home__title,
 .about__title,
-.activities__title {
+.activities__title,
+.contact__title {
   font-weight: 500;
   font-size: 2.5em;
   text-align: center;
@@ -68,14 +70,16 @@ body {
 }
 
 .about__content,
-.activities__content {
+.activities__content,
+.contact__content {
   margin: 2em;
   background-color: #9ad7e7;
   padding: 1em;
   border-radius: 6px;
 }
 
-.about__content {
+.about__content,
+.contact__content {
   display: flex;
   flex-direction: row;
   margin-bottom: 3.5em;
@@ -126,7 +130,8 @@ body {
 }
 
 .teamCard__title,
-.activities__content__title {
+.activities__content__title,
+.contact__content__left__title {
   color: #193b4f;
   font-weight: 500;
   font-size: 1.2em;
@@ -149,6 +154,26 @@ body {
   justify-content: space-between;
 }
 
-.activities__content__title {
+.activities__content__title,
+.contact__content__left__title {
   font-size: 1.5em;
+}
+
+.contact__content__left__title {
+  margin-bottom: 0.3em;
+}
+
+.contact__content__left__text {
+  color: #193b4f;
+  font-size: 1.2em;
+}
+
+.contact__content__left__text__last {
+  color: #193b4f;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+#map {
+  height: 200px;
 }
