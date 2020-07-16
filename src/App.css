@@ -52,12 +52,14 @@ body {
 }
 
 .home,
-.about {
+.about,
+.activities {
   margin: 2em;
 }
 
 .home__title,
-.about__title {
+.about__title,
+.activities__title {
   font-weight: 500;
   font-size: 2.5em;
   text-align: center;
@@ -65,20 +67,22 @@ body {
   margin-bottom: 1.5em;
 }
 
-.about__content {
+.about__content,
+.activities__content {
   margin: 2em;
   background-color: #9ad7e7;
   padding: 1em;
   border-radius: 6px;
 }
 
-.about__content__top {
+.about__content {
   display: flex;
   flex-direction: row;
   margin-bottom: 3.5em;
 }
 
-.about__content__top__image {
+.about__content__top__image,
+.activities__content__image {
   max-height: 250px;
   border-radius: 6px;
 }
@@ -93,7 +97,8 @@ body {
 
 .about__content__history,
 .about__content__team {
-  margin-top: 2em;
+  margin: 2em;
+  margin-bottom: 3em;
 }
 
 .about__content__history__title,
@@ -120,17 +125,30 @@ body {
   justify-content: space-between;
 }
 
-.teamCard__title {
+.teamCard__title,
+.activities__content__title {
   color: #193b4f;
   font-weight: 500;
   font-size: 1.2em;
   margin-bottom: 0.5em;
 }
 
-.teamCard__bio {
+.teamCard__bio,
+.activities__content__text {
   color: #193b4f;
 }
 
 .teamCard__image {
   max-height: 200px;
+  border-radius: 6px;
+}
+
+.activities__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.activities__content__title {
+  font-size: 1.5em;
 }
