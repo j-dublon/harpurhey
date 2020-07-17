@@ -78,8 +78,7 @@ body {
   border-radius: 6px;
 }
 
-.about__content,
-.contact__content {
+.about__content {
   display: flex;
   flex-direction: row;
   margin-bottom: 3.5em;
@@ -131,7 +130,7 @@ body {
 
 .teamCard__title,
 .activities__content__title,
-.contact__content__left__title {
+.contact__content__title {
   color: #193b4f;
   font-weight: 500;
   font-size: 1.2em;
@@ -155,25 +154,42 @@ body {
 }
 
 .activities__content__title,
-.contact__content__left__title {
+.contact__content__title {
   font-size: 1.5em;
 }
 
-.contact__content__left__title {
+.contact__container {
+  margin: 2em;
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 3.5em;
+  width: 40%;
+  float: left;
+}
+
+.contact__content__title {
   margin-bottom: 0.3em;
 }
 
-.contact__content__left__text {
+.contact__content__text {
   color: #193b4f;
   font-size: 1.2em;
 }
 
-.contact__content__left__text__last {
+.contact__content__text__last {
   color: #193b4f;
   font-size: 1.2em;
   margin-bottom: 2em;
 }
 
 #map {
-  height: 200px;
+  height: 375px;
+  width: 40%;
+  border-radius: 6px;
+  float: right;
+  margin-top: 2.3em;
 }
