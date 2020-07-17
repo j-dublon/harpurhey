@@ -1,5 +1,6 @@
 import React from "react";
 import { usePosts } from "../customhooks";
+import NewsCard from "./NewsCard";
 
 const News = () => {
   const [posts, isLoading] = usePosts();
@@ -7,11 +8,18 @@ const News = () => {
   return (
     <main className="news">
       <h1 className="news__title">News</h1>
-      <ul>
+      <section className="news__content">
         {posts.map((post) => {
-          return <li key={post.fields.id}>{post.fields.title}</li>;
+          return (
+            <NewsCard
+              key={post.fields.id}
+              title={post.fields.title}
+              date={post.fields.date}
+              image={post.fields.image}
+            />
+          );
         })}
-      </ul>
+      </section>
     </main>
   );
 };

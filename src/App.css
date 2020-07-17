@@ -132,7 +132,9 @@ body {
 
 .teamCard__title,
 .activities__content__title,
-.contact__content__title {
+.contact__content__title,
+.newsCard__title,
+.newsCard__date {
   color: #193b4f;
   font-weight: 500;
   font-size: 1.2em;
@@ -158,6 +160,39 @@ body {
 .activities__content__title,
 .contact__content__title {
   font-size: 1.5em;
+}
+
+.news__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.newsCard {
+  width: 30%;
+  height: 330px;
+  background-color: #9ad7e7;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  box-shadow: 5px 5px 3px #cfd1d1;
+}
+
+.newsCard__image {
+  max-height: 220px;
+  align-self: center;
+  margin: 1em;
+  border-radius: 6px;
+}
+
+.newsCard__title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+}
+
+.newsCard__date {
+  text-align: center;
 }
 
 .contact__container {

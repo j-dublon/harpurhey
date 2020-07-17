@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import TeamCard from "./TeamCard";
 
 const About = () => {
-  const [team, setTeam] = useState([
+  const team = [
     {
       key: "1",
       name: "Ms. Smith",
@@ -18,7 +18,7 @@ const About = () => {
         "Mr. Jones has worked here even longer and does lots of useful things.",
       image: require("../images/2.png"),
     },
-  ]);
+  ];
 
   return (
     <main className="about">
