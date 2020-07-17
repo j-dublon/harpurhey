@@ -54,14 +54,16 @@ body {
 .home,
 .about,
 .activities,
-.contact {
+.contact,
+.news {
   margin: 2em;
 }
 
 .home__title,
 .about__title,
 .activities__title,
-.contact__title {
+.contact__title,
+.news__title {
   font-weight: 500;
   font-size: 2.5em;
   text-align: center;

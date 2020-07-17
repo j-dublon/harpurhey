@@ -1,6 +1,6 @@
 const client = require("contentful").createClient({
   space: "882nad0fg965",
-  accessToken: "CFPAT-zC_mPQi6w0JMVXHjulXQFzYJqUrH8YrbiT82L8z0KIU",
+  accessToken: "Mx7PfAL9zOGLereyn68TDP6eFqVJRGYmUwqFtZadzOU",
 });
 
 const getBlogPosts = () =>
