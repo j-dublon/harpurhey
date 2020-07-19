@@ -4,7 +4,7 @@ import NewsCard from "./NewsCard";
 
 const News = () => {
   const [posts, isLoading] = usePosts();
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) return <p className="loading">Loading...</p>;
   return (
     <main className="news">
       <h1 className="news__title">News</h1>
@@ -16,6 +16,7 @@ const News = () => {
               title={post.fields.title}
               date={post.fields.date}
               image={post.fields.image}
+              id={post.fields.id}
             />
           );
         })}

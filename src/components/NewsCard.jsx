@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "@reach/router";
 
-const NewsCard = ({ title, date, image }) => {
+const NewsCard = ({ title, date, image, id }) => {
   return (
     <section className="newsCard">
       <img
@@ -8,8 +9,10 @@ const NewsCard = ({ title, date, image }) => {
         alt={title}
         className="newsCard__image"
       />
-      <h2 className="newsCard__title">{title}</h2>
-      <p className="newsCard__date">{date}</p>
+      <Link to={`/${id}`}>
+        <h2 className="newsCard__title">{title}</h2>
+        <p className="newsCard__date">{date}</p>
+      </Link>
     </section>
   );
 };

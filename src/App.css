@@ -55,7 +55,8 @@ body {
 .about,
 .activities,
 .contact,
-.news {
+.news,
+.newsItem {
   margin: 2em;
 }
 
@@ -63,12 +64,18 @@ body {
 .about__title,
 .activities__title,
 .contact__title,
-.news__title {
+.news__title,
+.newsItem__title,
+.loading {
   font-weight: 500;
   font-size: 2.5em;
   text-align: center;
   color: #193b4f;
   margin-bottom: 1.5em;
+}
+
+.loading {
+  margin-top: 5em;
 }
 
 .about__content,
@@ -134,7 +141,8 @@ body {
 .activities__content__title,
 .contact__content__title,
 .newsCard__title,
-.newsCard__date {
+.newsCard__date,
+.newsItem__date {
   color: #193b4f;
   font-weight: 500;
   font-size: 1.2em;
@@ -191,8 +199,29 @@ body {
   margin-bottom: 0.3em;
 }
 
+.newsCard__title:hover {
+  color: #ed7d2d;
+}
+
 .newsCard__date {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.newsItem__title {
+  margin-bottom: 0.3em;
+}
+
+.newsItem__date {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.newsItem__image {
+  max-height: 350px;
 }
 
 .contact__container {

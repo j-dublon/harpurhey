@@ -7,6 +7,7 @@ import About from "./components/About";
 import Activities from "./components/Activities";
 import News from "./components/News";
 import Contact from "./components/Contact";
+import NewsItem from "./components/NewsItem";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Activities path="/activities" />
         <News path="/news" />
         <Contact path="/contact" />
+        <NewsItem path="/:id" />
       </Router>
     </div>
   );
