@@ -8,10 +8,9 @@ const NewsItem = ({ id }) => {
   return (
     <main className="newsItem">
       <h1 className="newsItem__title">{post.title}</h1>
-      <p className="newsItem__date">{}</p>
       <section className="newsItem__content">
         <img
-          src={post.file.url}
+          src={post.image.fields.file.url}
           alt={post.title}
           className="newsItem__content__image"
         />

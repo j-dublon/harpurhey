@@ -10,7 +10,7 @@ export default function useSinglePost(id) {
 
   useEffect(() => {
     getSinglePost(id).then((result) => {
-      setPost(result.includes.Asset[0].fields);
+      setPost(result.items[0].fields);
       const rawRichTextField = result.items[0].fields.body;
       const renderedHTML = documentToHtmlString(rawRichTextField);
       setPostBody(renderedHTML.replace(regex, "</p><br><p>"));
