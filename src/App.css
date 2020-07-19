@@ -41,8 +41,9 @@ body {
 }
 
 .hero {
-  background-color: #9ad7e7;
+  background-color: #e4f3fc;
   padding: 1em;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
 }
@@ -58,6 +59,11 @@ body {
 .news,
 .newsItem {
   margin: 2em;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
 }
 
 .home__title,
@@ -78,11 +84,22 @@ body {
   margin-top: 5em;
 }
 
+.home__title {
+  margin-bottom: 1em;
+}
+
+.home__line {
+  width: 60%;
+  display: flex;
+  align-self: center;
+}
+
 .about__content,
 .activities__content,
 .contact__content {
   margin: 2em;
-  background-color: #9ad7e7;
+  background-color: #e4f3fc;
+  box-shadow: 5px 5px 3px #cfd1d1;
   padding: 1em;
   border-radius: 6px;
 }
@@ -114,10 +131,27 @@ body {
 }
 
 .about__content__history__title,
-.about__content__team__title {
+.about__content__team__title,
+.home__subtitle,
+.home__subtitle__right {
   font-weight: 500;
   color: #193b4f;
   font-size: 2em;
+}
+
+.home__subtitle {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.home__subtitle__right {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: right;
+}
+
+.home__subtitle__right:hover {
+  color: #ed7d2d;
 }
 
 .about__content__history__text {
@@ -141,8 +175,7 @@ body {
 .activities__content__title,
 .contact__content__title,
 .newsCard__title,
-.newsCard__date,
-.newsItem__date {
+.newsCard__date {
   color: #193b4f;
   font-weight: 500;
   font-size: 1.2em;
@@ -179,7 +212,7 @@ body {
 .newsCard {
   width: 30%;
   height: 330px;
-  background-color: #9ad7e7;
+  background-color: #e4f3fc;
   display: flex;
   flex-direction: column;
   border-radius: 6px;
@@ -212,21 +245,19 @@ a {
 }
 
 .newsItem__title {
-  margin-bottom: 0.3em;
-}
-
-.newsItem__date {
-  margin-bottom: 2em;
+  text-align: left;
 }
 
 .newsItem__content {
   display: flex;
   flex-direction: row;
+  margin: 2em;
 }
 
 .newsItem__content__image {
   max-height: 350px;
   margin-right: 2.5em;
+  margin-top: 7em;
 }
 
 .newsItem__content__body {
