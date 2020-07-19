@@ -220,8 +220,20 @@ a {
   margin-bottom: 2em;
 }
 
-.newsItem__image {
+.newsItem__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.newsItem__content__image {
   max-height: 350px;
+  margin-right: 2.5em;
+}
+
+.newsItem__content__body {
+  font-size: 1.3em;
+  line-height: 1.7em;
+  color: #193b4f;
 }
 
 .contact__container {

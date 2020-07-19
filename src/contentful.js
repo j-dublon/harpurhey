@@ -7,11 +7,9 @@ const getBlogPosts = () =>
   client.getEntries().then((response) => response.items);
 
 const getSinglePost = (id) =>
-  client
-    .getEntries({
-      "fields.id": id,
-      content_type: "blogPost",
-    })
-    .then((response) => response.items);
+  client.getEntries({
+    "fields.id": id,
+    content_type: "blogPost",
+  });
 
 export { getBlogPosts, getSinglePost };
